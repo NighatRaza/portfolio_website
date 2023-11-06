@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Source Code Pro', monospace;
+    scroll-behavior: smooth;
+}
+
+
+/* NAVBAR */
+
+.navbar ul{    
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
+
+}
+.navbar .logo-img{
+    margin-left: 50px;
+    margin-right: 200px;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    
+}
+.navbar .resume-btn{
+    margin-left: 200px;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+.navbar button:hover{
+    border-color: grey;
+}
+.navbar .link{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+.navbar .link:hover{
+    border-bottom: 2px solid grey;
+    color: grey;
+}
+
+/* HOME */
+
+.home{
+    /* padding-top: 1000px; */
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, rgb(51, 14, 87), #6412c244)
+   
+}
+.home h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    padding: 20px;
+}
+.home h2{
+    font-size: 40px;
+}
+.home h3{
+    font-size: 20px;
+}
+.home button{
+    margin: 40px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: transparent;
+}
+.home button:hover{
+    border-color: grey;
+}
+.home .fa-angle-down{
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ABOUT */
+
+.about{
+    background: linear-gradient(to top, rgb(110, 105, 116), #b689eb8e)
+}
+
+
+.about ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about img{
+    height: 400px;
+    width: 400px;
+    padding: 80px;
+}
+
+/* SKILLS */
+/* .skills-projects{
+    
+    background: linear-gradient(to bottom, rgb(51, 14, 87), #7201f31e)
+} */
+
+.skills ul{
+    margin-left: 400px;
+    margin-right: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 50px;
+}
+
+.skills h1{
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+}
+
+/* PROJECTS */
+
+.projects{
+    margin: 120px;
+   
+}
+.projects h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.projects h3{
+    padding-top: 8px;
+    color: grey;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;   
+    margin-top: 30px;
+    height: 800px;
+    width: 1100px;
+    flex-wrap: wrap;
+  }
+  
+  .flex-container div {
+    /* border-style: groove; */
+    
+    box-shadow:  6px 4px 8px 4px;
+    width: 300px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+    position: relative;
+  top: 0;
+  transition: top ease 0.9s;
+  }
+  .flex-container div:hover{
+    top: -10px;
+  }
+.flex-container p{
+    font-size: 20px;
+}      
+.flex-container li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+.flex-container li button{ 
+    padding: 5px;
+    margin: 10px;
+    width: 70px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid black;
+    /* background-color: grey; */
+    /* color: white;    */
+    /* border: none; */
+}
+.flex-container li button:hover{
+    border-color: grey;
+    cursor: pointer;
+}
+.flex-container .todoappimg{
+    padding: 15px;
+    height: 220px;
+    width: 270px;
+}
+
+/* SERVICES */
+
+.services{
+    text-align: center;
+    padding-bottom: 50px;
+    background: linear-gradient(to top, rgb(93, 73, 112), #542f8054);
+    
+    font-weight: bold;
+}
+.services .dom{
+    display: inline-block;
+    justify-content: space-between;
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+}
+.services p{
+    padding: 20px;
+}
+.services i{
+    font-size: 60px;
+    padding: 30px;
+}
+.services h1{
+    font-size: 40px;
+    padding: 20px;
+}
+.services h2{
+    font-size: 30px;
+}
+.services h3{
+    font-size: 25px;
+    padding: 10px;
+}
+.services h4{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* CONTACT */
+
+.contact{
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 100px;
+    text-align: center;
+    background-color: #8366a071;    
+    background: linear-gradient(to bottom, rgb(106, 71, 141), #d4cbdf54,rgb(106, 71, 141))
+}
+.contact div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact h1{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    padding: 20px;
+}
+.contact p{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    padding-bottom: 30px;
+}
+input[type=text], select, textarea {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    width: 35%;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: transparent;
+}
+
+  
+  input[type=submit] {
+    font-family: 'Fira Sans', sans-serif;
+    height: 50px;
+    width: 10%;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: transparent;
+  }
+  
+  input[type=submit]:hover {
+    border-color: grey;
+  }
+  input[type=checkbox]{
+    margin-right: 25px;
+    cursor: pointer;
+  }
+
+.contact-three div{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.contact-three i{
+    font-size: 40px;
+    padding: 20px;
+        
+}
+.contact-three p{
+    padding: 15px;
+    color: rgb(71, 69, 69);
+    font-weight: bold;
+}
+.contact-three h3{
+    font-weight: bolder;
+    
+}
+
+
+/* footer */
+.footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 250px;
+    padding-bottom: 20px;
+    background-color: rgb(106, 71, 145);
+    
+    font-weight: bold;
+}
+.footer i{
+
+    padding-top: 3px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.footer p{
+    padding-right: 15%;
+}
+.socialmedia a{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
